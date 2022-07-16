@@ -1,0 +1,112 @@
+
+body
+{
+    margin: 0;
+    padding: 0;
+    background-color: black;
+}
+.container
+{
+    border: 2px solid darkslategray;
+    margin-top: 100px;
+}
+#p1
+{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    color: white;
+    font-size: 4.5rem;
+   
+}
+.tophead img
+{
+    height: 5rem;
+    width: 5rem;
+}
+#p2
+{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    color: white;
+    font-size: 3rem;
+}
+#search
+{
+    color: tomato;
+}
+#p3
+{
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: underline;
+    font-size: 3.0rem;
+    color: green
+    
+}
+#def 
+{
+    color: white;
+    font-size: 2.5rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+}
+#related
+{
+    color: lightcoral;
+    font-size: 3.5rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+}
+
+#deff
+{
+    color: teal;
+    font-size: 3rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+}
+.figure img
+{
+    height: 25rem;
+    width: 25rem;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.relp
+{
+    color:white;
+    font-size: 2.5rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    display: inline;
+}
+.leftdoc img
+{
+    height: 20rem;
+    width: 20rem;
+    margin-top: 2rem;
+}
+.captions p
+{
+    color: darkgreen;
+    font-size: 2rem;
+    font-size: 3.0rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+}
+.captions
+{
+    margin-top: 2rem;
+}
+.labelling
+{
+    color: lightcoral;
+    font-size: 30px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+}
+#diagram{
+    border-radius: 10%;
+    border: 5px solid darkslategray;
+    transition: 1s;
+}

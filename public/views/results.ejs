@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah|Homemade+Apple|Pangolin|Satisfy&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/search.css">
+    <link href="https://fonts.googleapis.com/css?family=Amatic+SC:400,700|Gochi+Hand|Handlee|Kaushan+Script|Sacramento|Satisfy&display=swap" rel="stylesheet">
+    <title>Search Results</title>
+  </head>
+  <body>
+    <div class="container tophead">
+        <p id="p1" style="font-size: 50px">Hi,</p>
+        <p style="font-size: 30px; color: white;">Query:- <span id="search" style="color: brown;"><%= query %></span></p>
+        <br>
+        <p id="p3" style="font-size: 30px;">Search Results...</p>
+        <p id="def" style="font-size: 25px;"><span id="deff" style="font-size: 30px;" >Definiton: </span><%= results["definition"] %>.</p>
+      
+      
+        <% if(results["fig_link"]!=undefined) { %>
+          <div class="row">
+        <div class="col-xl-3 col-lg-3 col-md-2 leftdoc">
+          <img src="https://webstockreview.net/images/clipart-doctor-animated-12.png" style="border-radius:10%;" class=" d-none d-md-none d-lg-block d-xl-block">
+        </div>
+
+        <div class="col-xl-9 col-lg-9 col-md-10 col-sm-12 col-xs-12 figure">
+          <img src="<%= results["fig_link"] %>" id="diagram">
+        </div>
+        
+
+
+        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12 captions">
+            
+            <span class="labelling" style="font-size: 35px;">Labelling: </span">
+            <p style="font-size: 25px;">
+            <%= results["caption"] %>
+          </p>
+        </div>
+        
+      </div>
+
+        <% } %>
+
+
+        <% if(related.length!=0) { %>
+          <span id="related" style="font-size: 30px;">Related: </span>
+           <% for(var i=0;i!=related.length;i++){ %>
+              <p class="relp" style="font-size: 30px;"> <a href="/search/<%= related[i] %>"> <%= related[i] %>, </a></p>
+            <% } %>
+         <% } %> 
+    </div>
+ 
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  </body>
+</html>
